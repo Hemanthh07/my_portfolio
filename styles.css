@@ -531,6 +531,58 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Travel Section */
+.travel-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f6f9ff 0%, #eef4ff 100%);
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.travel-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    box-shadow: 0 14px 26px rgba(17, 24, 39, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.travel-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 34px rgba(17, 24, 39, 0.12);
+}
+
+.travel-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.travel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.travel-content {
+    padding: 1.25rem;
+}
+
+.travel-content h3 {
+    margin-bottom: 0.55rem;
+    color: #0f172a;
+}
+
+.travel-content p {
+    color: #475569;
+    line-height: 1.65;
+}
+
 /* Coffee Pillar Page */
 .coffee-hero {
     padding: 140px 0 48px;
@@ -904,6 +956,18 @@ h1, h2, h3, .nav-logo a {
 .coffee-metric {
     background: #dbeafe;
     color: #1e3a8a;
+}
+
+.food-image {
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.01);
 }
 
 @media (max-width: 768px) {
