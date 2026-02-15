@@ -692,3 +692,231 @@ body {
         padding: 0 15px;
     }
 } 
+
+/* Theme Refresh */
+:root {
+    --ink-900: #111827;
+    --ink-700: #334155;
+    --sand-50: #f8faff;
+    --sand-100: #eef4ff;
+    --sand-200: #dbe7ff;
+    --amber-500: #ef4444;
+    --amber-600: #dc2626;
+    --mint-500: #3b82f6;
+    --mint-600: #1d4ed8;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--ink-900);
+    background:
+        radial-gradient(circle at 12% 14%, rgba(59, 130, 246, 0.1), transparent 30%),
+        radial-gradient(circle at 86% 22%, rgba(239, 68, 68, 0.12), transparent 38%),
+        var(--sand-50);
+}
+
+h1, h2, h3, .nav-logo a {
+    font-family: 'Sora', sans-serif;
+}
+
+.section-title {
+    letter-spacing: -0.02em;
+}
+
+.navbar {
+    background: rgba(255, 253, 248, 0.88);
+    border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.nav-logo a {
+    color: var(--ink-900);
+}
+
+.nav-menu a {
+    color: var(--ink-700);
+}
+
+.nav-menu a:hover {
+    color: var(--amber-600);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 18% 24%, rgba(59, 130, 246, 0.48), transparent 38%),
+        radial-gradient(circle at 92% 12%, rgba(239, 68, 68, 0.42), transparent 35%),
+        linear-gradient(140deg, #0f172a 0%, #1e293b 48%, #3b1020 100%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: -110px;
+    bottom: -180px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.2);
+    filter: blur(3px);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    left: -120px;
+    top: -140px;
+    border-radius: 50%;
+    background: rgba(239, 68, 68, 0.2);
+}
+
+.hero-title {
+    letter-spacing: -0.03em;
+}
+
+.highlight {
+    color: #fca5a5;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.btn {
+    border-radius: 999px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--amber-500) 0%, var(--amber-600) 100%);
+    color: #0f172a;
+}
+
+.btn-secondary {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.about {
+    background: linear-gradient(180deg, #f8faff 0%, #f1f5ff 100%);
+}
+
+.about-text p {
+    color: #374151;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, var(--mint-600) 0%, var(--mint-500) 100%);
+    box-shadow: 0 8px 18px rgba(59, 130, 246, 0.3);
+}
+
+.skill-tag:hover {
+    box-shadow: 0 12px 20px rgba(59, 130, 246, 0.4);
+}
+
+.stat {
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    box-shadow: 0 14px 22px rgba(17, 24, 39, 0.06);
+}
+
+.stat h3 {
+    color: var(--amber-600);
+}
+
+.projects {
+    background: transparent;
+}
+
+.project-card,
+.food-card,
+.social-link,
+.coffee-card,
+.coffee-highlight {
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    box-shadow: 0 16px 28px rgba(17, 24, 39, 0.07);
+}
+
+.project-image {
+    background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+}
+
+.project-link {
+    color: var(--mint-600);
+}
+
+.project-link:hover {
+    color: #115e59;
+}
+
+.food-section {
+    background: linear-gradient(180deg, #f8faff 0%, #fef2f2 100%);
+}
+
+.food-image {
+    background: linear-gradient(135deg, #1d4ed8 0%, #dc2626 100%);
+}
+
+.coffee-pillar-card .food-image {
+    background: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
+}
+
+.food-tags .tag {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.food-link {
+    color: var(--mint-600);
+}
+
+.food-link:hover {
+    color: #115e59;
+}
+
+.contact {
+    background: linear-gradient(180deg, #f8faff 0%, #fef2f2 100%);
+}
+
+.social-link:hover {
+    color: var(--mint-600);
+}
+
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+.coffee-hero {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.35), transparent 35%),
+        radial-gradient(circle at 88% 18%, rgba(239, 68, 68, 0.36), transparent 35%),
+        linear-gradient(135deg, #0b1222 0%, #1f2937 45%, #3b1020 100%);
+}
+
+.coffee-content {
+    background: linear-gradient(180deg, #f8faff 0%, #fef2f2 100%);
+}
+
+.coffee-rating {
+    color: var(--amber-600);
+}
+
+.coffee-metric {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+    .nav-menu.active {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        background: rgba(255, 253, 248, 0.98);
+        padding: 1rem 1.25rem 1.2rem;
+        border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+    }
+}
